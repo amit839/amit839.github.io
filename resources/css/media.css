@@ -23,7 +23,7 @@
 @media only screen and (max-width : 767px) {
     body{font-size: 16px;}
     header{
-        font-size : 16px;
+        font-size : 12px;
     }
     section{
         font-size : 14px;
@@ -43,6 +43,16 @@
         display: none;
         margin-bottom : 10px;
     }
+    .intro-first{
+        position : absolute;
+        width : 90%;
+        top : 52%;
+        color : #d2d2d2;
+        font-size: 150%;
+        line-height : 150%;
+        letter-spacing: 4px;
+        word-spacing: 2px;
+    }
     .main-nav li{
         display: block;
     }
@@ -56,19 +66,7 @@
     .footer-socials{
         display: block;
     }
-    .intro-first{
-        position : absolute;
-        top : 50%;
-        left : 50%;
-        padding: 0;
-        -webkit-transform : translate(-50%, -50%);
-                transform : translate(-50%, -50%);
-        color : #d2d2d2;
-        font-size: 160%;
-        line-height : 180%;
-        letter-spacing: 6px;
-        word-spacing: 3px;
-    }
+
     .section-skills{
         padding-top : 10px;
         padding-bottom : 50px;
@@ -181,13 +179,11 @@
 }
 @media only screen and (max-width : 480px) {
     body{font-size: 14px;}
-    header{font-size : 14px;}
+
     section{
         font-size : 12px;
     }
-    header h1{
-        left : 10%;
-    }
+
     .achieve-2 img{
         width : 38px;
     }
