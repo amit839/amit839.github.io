@@ -1,1 +1,269 @@
-@media only screen and (max-width :1200px){.intro-first{padding:0 2%}.row{padding:0 2%}body{font-size:18px}header{font-size:18px}.about-me-para{padding-left:8%}}@media only screen and (max-width :1023px){section{font-size:18px}.achieve-table{text-align:right;padding-left:5%}.intro-first{font-size:120%}}@media only screen and (max-width :767px){body{font-size:16px}header{font-size:12px}section{font-size:14px;padding:20px 0}footer{font-size:130%}.mobile-nav-icon{display:inline-block}.main-nav{margin-top:35px;margin-left:25px;float:left;display:none;margin-bottom:10px}.intro-first{position:absolute;width:90%;top:52%;color:#d2d2d2;font-size:150%;line-height:150%;letter-spacing:4px;word-spacing:2px}.main-nav li{display:block}.main-nav li a:link,.main-nav li a:visited{display:block;border:0;color:#fff;font-weight:400;padding:10px;font-size:100%}.main-nav li a:active,.main-nav li a:hover{color:#08f135}.footer-socials{display:block}.section-skills{padding-top:10px;padding-bottom:50px}.section-skills h2{margin:0}.skills-showcase{width:100%;padding:0}.sidenav{display:none}.about-me-1{width:100%;display:block;float:none}.about-me-2{width:100%;display:block;padding-top:0;text-align:center;float:none}.about-me-box{padding:5px}.about-me-para{padding:0;text-align:justify}.rainbow-box{height:60px;margin:10px auto 15px auto;width:60px}.box-bottom,.box-top{padding-bottom:20px;font-size:100%;color:#82ccdd}.box-bottom{padding-top:20px;word-spacing:3px}.rainbow-box i{line-height:50px;font-size:100%}.achieve-table{text-align:center;padding-left:0;line-height:25px}.achieve-1{display:block;width:100%;text-align:left;padding-right:2%;float:none}.achieve-2{margin-top:15px;text-align:center;padding:0;display:inline-block;width:100%;float:none}.achieve-2 ul{padding:0;margin:0}.achieve-2 li{display:inline-block;padding:0 15px;margin:5px 0}td{padding-right:2%}.achieve-2 img{width:50px;overflow:hidden}.my-footer h5{padding:30px 0}.section-contact{padding:30px 0}.contact-me p{line-height:20px}.contact-me h2{padding-bottom:20px;font-size:200%;letter-spacing:4px}.play{padding-top:30px}.profile-pic{margin-top:0;height:140px;position:relative;transform:translateX(1%);left:0}.my-logo{height:50px}.footer-socials i{font-size:120%}}@media only screen and (max-width :480px){body{font-size:14px}section{font-size:12px}.achieve-2 img{width:38px}.footer-socials i{font-size:110%}}
+@media only screen and (max-width :1200px) {
+    .intro-first {
+        padding: 0 2%
+    }
+
+    .row {
+        padding: 0 2%
+    }
+
+    body {
+        font-size: 18px
+    }
+
+    header {
+        font-size: 18px
+    }
+
+    .about-me-para {
+        padding-left: 8%
+    }
+}
+
+@media only screen and (max-width :1023px) {
+    section {
+        font-size: 18px
+    }
+
+    .achieve-table {
+        text-align: right;
+        padding-left: 5%
+    }
+
+    .intro-first {
+        font-size: 120%
+    }
+}
+
+@media only screen and (max-width :767px) {
+    body {
+        font-size: 16px
+    }
+
+    header {
+        font-size: 12px
+    }
+
+    section {
+        font-size: 14px;
+        padding: 20px 0
+    }
+
+    footer {
+        font-size: 130%
+    }
+
+    .mobile-nav-icon {
+        display: inline-block
+    }
+
+    .main-nav {
+        margin-top: 35px;
+        margin-left: 25px;
+        float: left;
+        display: none;
+        margin-bottom: 10px
+    }
+
+    .intro-first {
+        position: absolute;
+        width: 90%;
+        top: 52%;
+        color: #d2d2d2;
+        font-size: 150%;
+        line-height: 150%;
+        letter-spacing: 4px;
+        word-spacing: 2px
+    }
+
+    .main-nav li {
+        display: block
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        color: #fff;
+        font-weight: 400;
+        padding: 10px;
+        font-size: 100%
+    }
+
+    .main-nav li a:active,
+    .main-nav li a:hover {
+        color: #08f135
+    }
+
+    .footer-socials {
+        display: block
+    }
+
+    .section-skills {
+        padding-top: 10px;
+        padding-bottom: 50px
+    }
+
+    .section-skills h2 {
+        margin: 0
+    }
+
+    .skills-showcase {
+        width: 100%;
+        padding: 0
+    }
+
+    .sidenav {
+        display: none
+    }
+
+    .about-me-1 {
+        width: 100%;
+        display: block;
+        float: none
+    }
+
+    .about-me-2 {
+        width: 100%;
+        display: block;
+        padding-top: 0;
+        text-align: center;
+        float: none
+    }
+
+    .about-me-box {
+        padding: 5px
+    }
+
+    .about-me-para {
+        padding: 0;
+        text-align: justify
+    }
+
+    .rainbow-box {
+        height: 60px;
+        margin: 10px auto 15px auto;
+        width: 60px
+    }
+
+    .btn{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .box-bottom,
+    .box-top {
+        padding-bottom: 20px;
+        font-size: 100%;
+        color: #82ccdd
+    }
+
+    .box-bottom {
+        padding-top: 20px;
+        word-spacing: 3px
+    }
+
+    .rainbow-box i {
+        line-height: 50px;
+        font-size: 100%
+    }
+
+    .achieve-table {
+        text-align: center;
+        padding-left: 0;
+        line-height: 25px
+    }
+
+    .achieve-1 {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-right: 2%;
+        float: none
+    }
+
+    .achieve-2 {
+        margin-top: 15px;
+        text-align: center;
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        float: none
+    }
+
+    .achieve-2 ul {
+        padding: 0;
+        margin: 0
+    }
+
+    .achieve-2 li {
+        display: inline-block;
+        padding: 0 15px;
+        margin: 5px 0
+    }
+
+    td {
+        padding-right: 2%
+    }
+
+    .achieve-2 img {
+        width: 50px;
+        overflow: hidden
+    }
+
+    .my-footer h5 {
+        padding: 30px 0
+    }
+
+    .section-contact {
+        padding: 30px 0
+    }
+
+    .contact-me p {
+        line-height: 20px
+    }
+
+    .contact-me h2 {
+        padding-bottom: 20px;
+        font-size: 200%;
+        letter-spacing: 4px
+    }
+
+    .play {
+        padding-top: 30px
+    }
+
+    .profile-pic {
+        margin-top: 0;
+        height: 140px;
+        position: relative;
+        transform: translateX(1%);
+        left: 0
+    }
+
+    .my-logo {
+        height: 50px
+    }
+
+    .footer-socials i {
+        font-size: 120%
+    }
+}
+
+@media only screen and (max-width :480px) {
+    body {
+        font-size: 14px
+    }
+
+    section {
+        font-size: 12px
+    }
+
+    .achieve-2 img {
+        width: 38px
+    }
+
+    .footer-socials i {
+        font-size: 110%
+    }
+}

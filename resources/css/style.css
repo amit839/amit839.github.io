@@ -25,7 +25,8 @@ h4 {
 
 .row {
     max-width: 1140px;
-    margin: 0 auto
+    margin: 0 auto;
+    backface-visibility: hidden;
 }
 
 .row2 {
@@ -45,6 +46,9 @@ h4 {
     visibility: hidden
 }
 
+/*********************************/
+/***** HEADER *********/
+/*********************************/
 header {
     height: 100vh;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 54, 54, .86)), to(rgba(14, 43, 79, .65))), url(images/background/background-1.jpg);
@@ -52,7 +56,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    position: relative
+    position: relative;
 }
 
 h1 {
@@ -63,7 +67,7 @@ h1 {
     height: 100vh;
     width: 90px;
     position: fixed;
-    z-index: 1;
+    z-index: 99999999999;
     top: 12%;
     left: 0;
     padding: 30px 30px;
@@ -189,7 +193,9 @@ h1 {
     font-size: 200%;
     color: #fff
 }
-
+.icon-padding{
+    padding-right : 5px;
+}
 .sticky {
     position: fixed;
     top: 0;
@@ -222,14 +228,32 @@ h1 {
     font-size: 160%;
     line-height: 220%;
     letter-spacing: 8px;
-    word-spacing: 3px
+    word-spacing: 3px;
+    backface-visibility: hidden;
 }
 
 .intro-first h1 {
     color: #ececec
 }
 
+.text-1{
+    animation: moveInBottom 1s ease-out; 
+}
+.text-2{
+    animation: moveInBottom 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
+}
+.text-3{
+    animation: moveInBottom 1s ease-out 1s;
+    animation-fill-mode: backwards;
+}
+
+/*********************************/
+/****** ABOUT ME *********/
+/*********************************/
+
 .about-me {
+    
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 14, 14, .86)), to(rgba(12, 6, 78, .78))), url(images/background/background-2.jpg);
     background: linear-gradient(rgba(14, 14, 14, .86), rgba(12, 6, 78, .78)), url(images/background/background-2.jpg);
     background-size: cover;
@@ -250,14 +274,16 @@ h1 {
 .about-me-1 {
     width: 75%;
     display: inline-block;
-    float: left
+    float: left;
+    opacity: 0;
 }
 
 .about-me-2 {
     width: 25%;
     display: inline-block;
     float: right;
-    position: relative
+    position: relative;
+    opacity: 0;
 }
 
 .about-me-para {
@@ -297,7 +323,8 @@ h1 {
 
 .inner-box {
     width: 100%;
-    overflow: hidden
+    overflow: hidden;
+    opacity: 0;
 }
 
 .border {
@@ -362,6 +389,11 @@ h1 {
     color: #1a1919
 }
 
+
+/*********************************/
+/***** SKILLS *********/
+/*********************************/
+
 .section-skills {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 14, 97, .91)), to(rgba(111, 17, 38, .92)));
     background: linear-gradient(rgba(38, 14, 97, .91), rgba(111, 17, 38, .92));
@@ -379,7 +411,9 @@ h1 {
     font-size: 200%;
     letter-spacing: 3px
 }
-
+.animate-skill{
+    opacity: 0;
+}
 .skills-showcase {
     margin: 0 auto;
     list-style: none;
@@ -416,6 +450,10 @@ h1 {
     opacity: 1
 }
 
+/*********************************/
+/***** ACHIEVEMENTS *********/
+/*********************************/
+
 .section-achievements {
     padding: 50px 0;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 70, 70, .9)), to(rgba(0, 0, 0, .9))), url(images/background/background-9.jpeg);
@@ -437,7 +475,8 @@ h1 {
     width: 75%;
     padding-left: 6%;
     word-spacing: 5px;
-    line-height: 30px
+    line-height: 30px;
+    opacity: 0;
 }
 
 .achieve-1 a:link,
@@ -502,13 +541,19 @@ h1 {
     transform: scale(1.15)
 }
 
+/*********************************/
+/***** CONACT-ME *********/
+/*********************************/
+
 .section-contact {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 66, 101, .9)), to(rgba(28, 34, 27, .81)));
     background: linear-gradient(rgba(40, 66, 101, .9), rgba(28, 34, 27, .81));
+   
     background-size: cover;
     background-position: bottom;
     text-align: center;
-    padding: 50px 0
+    padding: 50px 0;
+    
 }
 
 .contact-me {
@@ -532,33 +577,50 @@ h1 {
 }
 
 .wrapper2 {
-    text-align: center
+    text-align: center;
 }
 
 .play {
     padding-top: 50px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    
 }
 
 .btn {
-    background: #66bfbf;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#66bfbf), to(#2980b9));
-    background-image: linear-gradient(to bottom, #66bfbf, #2980b9);
-    border-radius: 28px;
-    font-family: Arial;
-    color: #eaf6f6;
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none
+    border: 2px solid #e91f52;
+    padding: 15px 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 1s all ease;
 }
 
-.btn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3cb0fd), to(#3498db));
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none
+.btn::before{
+    background: #2b0505;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
 }
 
+.btn-1::before{
+    width: 0;
+    height: 100%;
+}
+.btn-1:hover::before{
+    width: 100%;
+}
+/*********************************/
+/***** FOOTER *********/
+/*********************************/
 footer {
     background: #24251f
 }
@@ -592,8 +654,56 @@ footer {
     transition: .2s
 }
 
-.js--wp-1,
-.js--wp-2,
-.js--wp-3 {
-    opacity: 0
+/**********Animation class********/
+
+.animate-left{
+    animation: moveInLeft 1s ease-out;
+    opacity: 1;
+}
+
+.animate-right {
+    animation: moveInRight 1s ease-out;
+    opacity: 1;
+}
+.animate-bottom {
+    animation: moveInBottom 1s ease-out 0.5s;
+    opacity: 1;
+    animation-fill-mode: backwards;
+}
+.animate-bottom2 {
+    animation: moveInBottom 1s ease-out;
+    opacity: 1;
+    animation-fill-mode: backwards;
+}
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translatex(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
