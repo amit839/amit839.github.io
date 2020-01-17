@@ -125,8 +125,8 @@ h1 {
     transform: scale(1.25)
 }
 
-.google-plus i:hover {
-    color: #dd4b39;
+.twitter i:hover {
+    color: #00ccff;
     -webkit-transform: scale(1.25);
     transform: scale(1.25)
 }
